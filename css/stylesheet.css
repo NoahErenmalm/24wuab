@@ -1,4 +1,11 @@
 
+/* Feed */
+.post {
+  background-color:#181818;
+  width: 30vw;
+  height: 10vh;
+}
+
 #IndexWrapper {
   padding-top: 7vh;
   min-height: 100vh;
@@ -53,7 +60,6 @@ header {
 .search:focus-within {
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.75);
 }
-
 .search-input {
   font-size: 16px;
   font-family: 'lexend', sans-serif;
@@ -75,7 +81,7 @@ header {
   margin: 2px;
 }
 .profile-icon {
-  margin-right: 5%;
+  margin-right: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,6 +125,7 @@ header {
 .hamburger.is-active .bar {
   opacity: 0;
 }
+/* Navigation */
 .mobile-nav  {
   display: block;
   position: fixed;
@@ -129,17 +136,48 @@ header {
   background-color: #181818;
   z-index: 98;
   transition: 0.4s;
+  border-top-style: solid;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-width: 2px;
 }
 .mobile-nav.is-active {
   left: 0
 }
+.nav-anchor {
+  display: block;
+  border-bottom-style: solid;
+  border-width: 2px;
+  padding: 3vh;
+  color: rgba(255, 255, 255, 0.5);
+
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 17px;
+  font-family: "Georama", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+
+
+/* Google Symbols */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' -25,
+  'opsz' 20
+}
+
 
 
 
 /* annars 1024 bredast */
 @media (orientation: landscape) {
   .search {
-    padding-right: 20vw;
+    width: 50vw;
   }
   .mobile-nav {
     width: 25vw;
