@@ -9,7 +9,6 @@
 }
 
 /* header */
-
 header { 
   display: flex;
   justify-content: space-between;
@@ -25,12 +24,25 @@ header {
   
 }
 
+/* Parley Logo*/
+.logo {
+  height: 8vh;
+  padding-left: 20px;
+}
+.home-button {
+  padding: 0;
+  margin: 0;
+  display: none;
+  margin-left: 2%;
+  filter: invert(75%);
+}
+
 /* SearchBar */
 .search {
   width: max-content;
   display: flex;
   align-items:center;
-  padding: 5%;
+  padding: 2vh;
   border-radius: 28px;
   width: 300px;
   border-style: solid;
@@ -55,6 +67,7 @@ header {
 .search-input::placeholder, .search-icon {
   color: rgba(254, 254, 254, 0.6)
 }
+
 /* ProfileIcon */
 .profile-picture {
   border-radius: 50%;
@@ -79,16 +92,15 @@ header {
   padding-bottom: 5px;
   position: relative;
   display: block;
-  width: 50px;
+  width: 55px;
   cursor: pointer;
-  
+  padding-left: 2%;
 
   appearance: none;
   background: none;
   border: none;
   outline: none;
 }
-
 .hamburger .bar, .hamburger:after, .hamburger:before {
   content: '';
   display: block;
@@ -98,7 +110,6 @@ header {
   margin: 6px 0px 0px 0px;
   transition: 0.4s;
 }
-
 .hamburger.is-active:before {
   transform: rotate(-45deg) translate(-8px, 8px);
 }
@@ -108,7 +119,6 @@ header {
 .hamburger.is-active .bar {
   opacity: 0;
 }
-
 .mobile-nav  {
   display: block;
   position: fixed;
@@ -128,11 +138,17 @@ header {
 
 /* annars 1024 bredast */
 @media (orientation: landscape) {
+  .search {
+    padding-right: 20vw;
+  }
   .mobile-nav {
     width: 25vw;
     left: 0;
   }
   .hamburger {
     display: none;
+  }
+  .home-button {
+    display: block;
   }
 }
