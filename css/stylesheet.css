@@ -88,11 +88,16 @@ p{
   align-items: center;
   margin: 1%;
   padding: 2%;
-  color: rgba(254, 254, 254, 0.6);
   border-top-style: solid;
   border-color: rgba(254, 254, 254, 0.3);
+  
 }
-
+.post-response a {
+  color: rgba(254, 254, 254, 0.6);
+  font-family: 'lexend', sans-serif;
+  text-decoration: none;
+  
+}
 
 
 /* header */
