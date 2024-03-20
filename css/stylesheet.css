@@ -1,19 +1,87 @@
-
-/* Feed */
-.post {
-  background-color:#181818;
-  width: 30vw;
-  height: 10vh;
+/* Google Symbols */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' -25,
+  'opsz' 20
 }
 
+/* Feed */
 #IndexWrapper {
-  padding-top: 7vh;
+  padding-top: 10vh;
   min-height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-areas:
-  'section'
+  justify-content: center;
+
 }
+.post {
+  background-color:#181818;
+  width: 80vw;
+  height: 45vh;
+  color: rgb(234, 234, 234);
+  margin: 20px;
+  padding: 3vw;
+  border-style: solid;
+  border-color:#333333;
+  border-width: 4px;
+  border-radius: 5vh;
+}
+.post-data {
+  margin: 0 2%;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding-bottom: 20px;
+  color: rgba(254, 254, 254, 0.4);
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'lexend', sans-serif;
+}
+.post-community:hover {
+  color: rgba(254, 254, 254, 0.5);
+}
+.post-community:active {
+  color: rgba(254, 254, 254, 0.3);
+}
+.post-content {
+  text-align: center;
+  width: 100%; 
+  overflow: hidden;
+}
+.post-anchor {
+  color: rgba(254, 254, 254, 0.5);
+  text-decoration: none;
+}
+.post-anchor:hover{
+  text-decoration: underline;
+}
+h4 {
+  text-align: justify; 
+  font-family: 'lexend', sans-serif;
+  font-size: 25px;
+  font-weight: 540;
+  margin: 0;
+}
+p{
+  text-align: justify; 
+  font-family: 'lexend', sans-serif;
+  font-size: 19px;
+  font-weight: 100;
+  margin: 0;
+}
+.post-image {
+  height: 25vh;
+  float: left;
+  border-style: solid;
+  border-color: #333333;
+  border-radius: 5%;
+  padding: 0px;
+  margin: 0 20px 0 0;
+}
+
+
 
 /* header */
 header { 
@@ -28,7 +96,7 @@ header {
   height: 10vh;
   margin: 0;
   padding: 10;
-  
+  box-shadow: 0 2px 5px black
 }
 
 /* Parley Logo*/
@@ -72,6 +140,8 @@ header {
 }
 .search-input::placeholder, .search-icon {
   color: rgba(254, 254, 254, 0.6)
+  ingen aning varför detta funkar och inget annat men 
+  när jag förstör koden så ser det ut som jag vill
 }
 
 /* ProfileIcon */
@@ -91,6 +161,12 @@ header {
   border-radius: 50%;
   height: 50px;
   width: 50px;
+}
+.profile-icon:hover {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+.profile-icon:active {
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 /*HamburgerMenu*/
@@ -125,6 +201,7 @@ header {
 .hamburger.is-active .bar {
   opacity: 0;
 }
+
 /* Navigation */
 .mobile-nav  {
   display: block;
@@ -139,6 +216,7 @@ header {
   border-top-style: solid;
   border-color: rgba(255, 255, 255, 0.5);
   border-width: 2px;
+  box-shadow: 2px 0 5px black
 }
 .mobile-nav.is-active {
   left: 0
@@ -159,17 +237,15 @@ header {
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
-
-
-
-/* Google Symbols */
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 700,
-  'GRAD' -25,
-  'opsz' 20
+.nav-anchor:hover {
+  color: rgba(255, 255, 255, 0.8);
 }
+.nav-anchor:active {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+
+
 
 
 
