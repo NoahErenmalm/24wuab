@@ -1,3 +1,11 @@
+.body-community{
+  background-image: url(/24wuab/img/img/tombraiderbackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  background-attachment: fixed;
+}
 /* Google Symbols */
 .material-symbols-outlined {
   cursor: pointer;
@@ -6,18 +14,86 @@
   'wght' 700,
   'GRAD' -25,
   'opsz' 20
-  
+}
+
+/* Communtiy */
+.community {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #181818;
+  width: 80vw;
+  height: 50vh;
+  color: rgb(234, 234, 234);
+  margin: 20px;
+  padding: 3vw 3vw 0 3vw;
+  border-style: solid;
+  border-color:#333333;
+  border-width: 4px;
+  border-radius: 5vh;
+  margin-top: 18vh;
+  box-shadow: 1px 1px 20px black;
+}
+.community-creator {
+  color: rgba(254, 254, 254, 0.4);
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'lexend', sans-serif;
+}
+.community-left {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  height: 20vh;
+  width: 100%;
+  align-items: center;
+}
+.community-logo {
+  position: absolute;
+  top: 0;
+  left: 27%;
+  height: auto;
+  width: 40%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  padding: 10px;
+  border-top-style: solid;
+  border-color: rgba(255, 255, 255, 0.5);
+  background: #181818;
+}
+.community-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+h1{
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-family: 'lexend', sans-serif;
+}
+h3 {
+  color: rgb(180, 180, 180);
+  font-size: 14px;
+  font-family: 'lexend', sans-serif;
 }
 
 /* Feed */
 #IndexWrapper {
   padding-top: 10vh;
+  margin: 0;
   min-height: 100vh;
   width: 100%;
   display: grid;
   justify-content: center;
 
 }
+
+/* Posts */
 .post {
   display: flex;
   flex-direction: column;
@@ -31,6 +107,7 @@
   border-color:#333333;
   border-width: 4px;
   border-radius: 5vh;
+  box-shadow: 1px 1px 20px black;
 }
 .post-data {
   margin: 0 2%;
@@ -92,8 +169,6 @@ p{
   padding: 10px;
   border-top-style: solid;
   border-color: rgba(254, 254, 254, 0.3);
-
-  
 }
 .post-response a {
   color: rgba(254, 254, 254, 0.6);
@@ -115,8 +190,8 @@ header {
   width: 100vw;
   height: 10vh;
   margin: 0;
-  padding: 10;
-  box-shadow: 0 2px 5px black
+  box-shadow: 0 2px 5px black;
+  z-index: 2;
 }
 
 /* Parley Logo*/
@@ -231,7 +306,7 @@ header {
   width: 65%;
   min-height: 100vh;
   background-color: #181818;
-  z-index: 98;
+  z-index: 2;
   transition: 0.4s;
   border-top-style: solid;
   border-color: rgba(255, 255, 255, 0.5);
@@ -272,6 +347,13 @@ header {
 
 /* annars 1024 bredast */
 @media (orientation: landscape) {
+  .community-logo{
+    top: -2.5vw;
+  }
+  .community {
+    width: 50vw;
+    margin-left: 20%;
+  }
   .post {
     width: 50vw;
     margin-left: 20%; 
