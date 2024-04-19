@@ -379,4 +379,10 @@ header {
   .home-button {
     display: block;
   }
+  .title-card {
+    margin: 2vw;
+  }
+  .title-card h1 {
+    font-size: 6vw;
+  }
 }
