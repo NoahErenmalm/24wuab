@@ -332,6 +332,148 @@ header {
   color: rgba(255, 255, 255, 0.2);
 }
 
+/* Large Cards */
+.card {
+  background-color: #181818;
+  width: 98%;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+  font-family: 'Times New Roman', Times, serif
+}
+
+.card .banner {
+  background-image: url(../img/img/jigar-panchal-afvFK3d-NWQ-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.card .banner .imgBox {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: solid 3px #595959;
+  transform: translateY(50%);
+}
+
+.card .banner .imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .card-body {
+  position: relative;
+  padding: 100px 30px 40px;
+}
+
+.card .card-body .menu {
+  color: #595959;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background-color 100ms ease-in-out;
+}
+
+.card .card-body .menu:hover {
+  background-color: #333333;
+}
+
+.card h2.name {
+  color: rgb(234, 234, 234);
+  text-align: center;
+}
+
+.card .title {
+  color: #595959;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.card .actions{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.card .actions .follow-info {
+  padding-bottom: 20px;
+  display: flex;
+}
+
+.card .actions .follow-info h2{
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: background-color 100ms ease-in-out;
+  color: #595959;
+  font-size: 16px;
+}
+
+.card .actions .follow-info h2 span{
+  color: rgb(234, 234, 234);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.card .actions .follow-info h2:hover{
+  color: #737373;
+  background-color: #333333;
+  cursor: pointer;
+}
+
+.actions .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.actions button{
+  background-color: #606060;
+  border: none;
+  outline: none;
+  width: 40%;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 200ms ease-in-out, 
+  transform 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.actions button:hover{
+  background-color: #737373;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+ .actions button:active{
+  background-color: #333333;
+  transform: scale(1);
+}
+
+.card .description {
+  text-align: center;
+  color: rgb(234, 234, 234);
+  margin-bottom: 15px;
+}
+
+
 #Wrapper {
   margin: 0;
   min-height: 100vh;
@@ -357,14 +499,30 @@ header {
     'header header'
     'nav main'
   }
-  
 
-  .community-logo{
-    top: -2.5vw;
+  /* cards */
+
+  .card .banner{
+    justify-content: start;
   }
-  .community {
-    width: 50vw;
+
+  .name{
+    position:absolute;
+    top: 0;
+    left: 45%;
+    font-size: 25px;
   }
+  .title {
+    position: absolute;
+    top: 15%;
+    left: 45%;
+  }
+
+  .card .banner .imgBox {
+    margin-left: 5%;
+    transform: translateY(50%);
+  }
+  
   .post {
     width: 50vw;
   }
