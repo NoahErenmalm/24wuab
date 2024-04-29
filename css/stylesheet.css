@@ -335,11 +335,12 @@ header {
 /* Large Cards */
 .card {
   background-color: #181818;
-  width: 98%;
+  width: 95%;
   overflow: hidden;
   border-radius: 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
-  font-family: 'Times New Roman', Times, serif
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 40px;
 }
 
 .card .banner {
@@ -351,6 +352,7 @@ header {
   display: flex;
   justify-content: center;
 }
+
 
 .card .banner .imgBox {
   width: 150px;
@@ -394,12 +396,26 @@ header {
   color: rgb(234, 234, 234);
   text-align: center;
 }
+.card h2.name-tombraider {
+  color: rgb(234, 234, 234);
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: lighter;
+}
 
 .card .title {
   color: #595959;
-  font-size: 16px;
+  font-size: 15px;
   text-align: center;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+.title a{
+  color: #595959;
+  text-decoration: none;
+}
+
+.title a:hover {
+  text-decoration: underline;
 }
 
 .card .actions{
@@ -452,8 +468,8 @@ header {
   border-radius: 1.5rem;
   font-size: 1rem;
   font-weight: bold;
-  transition: background-color 200ms ease-in-out, 
-  transform 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: background-color 100ms ease-in-out, 
+  transform 100ms cubic-bezier(1, 0, 0, 1)
 }
 
 .actions button:hover{
@@ -468,6 +484,7 @@ header {
 }
 
 .card .description {
+  font-size: 17px;
   text-align: center;
   color: rgb(234, 234, 234);
   margin-bottom: 15px;
