@@ -288,7 +288,9 @@ header {
   display: flex;
   justify-content: center;
 }
-
+.card #banner-tombraider {
+  background-image: url(../img/img/tombraiderbanner.jpg);
+}
 
 .card .banner .imgBox {
   width: 150px;
@@ -432,6 +434,7 @@ header {
 .comment {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 75%;
   background-color: #181818;
   color: rgb(234, 234, 234);
@@ -456,7 +459,9 @@ header {
 
 .comment .menu{
   color: #ff0000;
-  
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -535,11 +540,5 @@ header {
   }
   .home-button {
     display: block;
-  }
-  .title-card {
-    margin: 0 2vw 40px 2vw;
-  }
-  .title-card h1 {
-    font-size: 6vw;
   }
 }
