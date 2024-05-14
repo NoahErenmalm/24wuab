@@ -1,5 +1,13 @@
+body {
+  background-image: url(/img/img/mountainbackground.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .body-community{
-  background-image: url(/24wuab/img/img/tombraiderbackground.jpg);
+  background-image: url(/img/img/tombraiderbackground.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -28,14 +36,11 @@ main{
   display: flex;
   flex-direction: column;
   background-color:#181818;
-  width: 80vw;
+  width: 80%;
   height: 50vh;
   color: rgb(234, 234, 234);
-  margin-bottom: 40px;
-  padding: 3vw 3vw 0 3vw;
-  border-style: solid;
-  border-color:#333333;
-  border-width: 4px;
+  margin-bottom: 30px;
+  padding: 20px 20px 0 20px;
   border-radius: 5vh;
   box-shadow: 1px 1px 20px black;
 }
@@ -134,7 +139,7 @@ header {
   margin: 0;
   display: none;
   margin-left: 2%;
-  filter: invert(75%);
+  filter: invert(60%);
 }
 
 /* SearchBar */
@@ -271,9 +276,9 @@ header {
 /* Large Cards */
 .card {
   background-color: #181818;
-  width: 95%;
+  width: 98%;
+  border-radius: 13px;
   overflow: hidden;
-  border-radius: 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
   font-family: 'lexend', sans-serif;
   margin-bottom: 40px;
@@ -290,6 +295,7 @@ header {
 }
 .card #banner-tombraider {
   background-image: url(../img/img/tombraiderbanner.jpg);
+  
 }
 
 .card .banner .imgBox {
@@ -328,6 +334,7 @@ header {
 
 .card .card-body .menu:hover {
   background-color: #333333;
+  color: #737373;
 }
 
 .card h2.name {
@@ -435,12 +442,14 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 75%;
+  width: 80%;
   background-color: #181818;
   color: rgb(234, 234, 234);
   padding: 10px 20px;
   border-radius: 1.5rem;
   margin-bottom: 30px;
+  box-shadow: 1px 1px 20px black;
+  font-family: 'lexend', sans-serif;
 }
 .comment * {
   margin: 3px;
@@ -457,18 +466,6 @@ header {
   justify-content: space-around;
 }
 
-.comment .menu{
-  color: #ff0000;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  transition: background-color 100ms ease-in-out;
-}
-
 #Wrapper {
   margin: 0;
   min-height: 100vh;
@@ -477,7 +474,7 @@ header {
   grid-template-rows: 10vh auto;
   grid-template-areas: 
   'header'
-  'main'
+  'main';
 }
 
 
@@ -495,10 +492,18 @@ header {
     'nav main'
   }
 
+  body{
+    background-image: url(/img/img/widemountainbackground.jpg);
+  }
+
   /* cards */
 
   .card .banner{
     justify-content: start;
+  }
+
+  .card #banner-tombraider {
+   background-position: 0 20%;
   }
 
   .name{
@@ -525,7 +530,7 @@ header {
   }
   
   .post {
-    width: 50vw;
+    padding-top: 2vw;
   }
   .search {
     width: 50vw;
