@@ -157,6 +157,9 @@ header {
 .search:focus-within {
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.75);
 }
+.search-input::placeholder, .search-icon {
+  color: rgb(254, 254, 254, 0.6);
+}
 .search-input {
   font-size: 16px;
   font-family: 'lexend', sans-serif;
@@ -166,11 +169,6 @@ header {
   border: none;
   background: transparent;
   flex: 1;
-}
-.search-input::placeholder, .search-icon {
-  color: rgba(254, 254, 254, 0.6)
-  ingen aning varför detta funkar och inget annat men 
-  när jag förstör koden så ser det ut som jag vill
 }
 
 /* ProfileIcon */
@@ -256,15 +254,11 @@ header {
   border-width: 2px;
   padding: 3vh;
   color: rgba(255, 255, 255, 0.5);
-
   text-decoration: none;
   letter-spacing: 2px;
   font-size: 17px;
   font-family: "Georama", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 500;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
 }
 .nav-anchor:hover {
   color: rgba(255, 255, 255, 0.8);
